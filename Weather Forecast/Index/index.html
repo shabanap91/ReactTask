@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontent Task</title>
+    <!-- Bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style link      -->
+    <link rel="stylesheet" href="../Style/style.css">
+    <!-- js  -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-dark" id="navv">
+            <div class="container-fluid">
+                <a class="navbar-brand col-6">
+                    <h2>Weather Forecast</h2>
+                </a>
+                <a href="#" class="navbar-brand col-2">
+                    <div class="row"> </div>
+                </a>
+                <a class="navbar-brand ">
+                    <div id="timeEl">10:20 am<span id="am-pm"></span></div>
+                </a>
+                <!-- UTC time zone clock  -->
+                <a class="navbar-brand col-2">
+                    <div class="utcClock">
+                        <div class="hours" id="hour"></div>
+                        <div class="mins" id="minute"></div>
+                        <div class="secs" id="second"></div>
+                        <div class="dots"></div>
+                    </div>
+                </a>
+                <div class="d-flex">
+                    <div class="profile">
+                        <img src="../Images/gl.jpeg" style="width:60px; border-radius: 50%;" class="" alt="">
+                    </div>
+                    <div class="setting">
+                        <i class="fa-sharp fa-solid text-light fa-3x fa-gear"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- <video src="../images/production ID_4377451.mp4" muted autoplay loop></video> -->
+        <!-- <video autoplay muted loop playsinline over src="../images/production ID_4377451.mp4" id="myVideo"> </video> -->
+        <div class="container">
+            <div class="wrapper text-light ">
+                <div class="row  main">
+                    <div class="col-md-3 p-3 sides">
+                        <div class="searchbar p-3"><br>
+                            <div class="row">
+                                <div class="col-6">
+
+                                    <div class="input">
+                                        <!-- <input type="text" id="city-input" class="text-light" placeholder="Enter city"> -->
+                                        <!-- <input type="submit" value="submit" id="add" class="bg-light">
+                                        <button placeholder="submit" id="add">btn</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br><br>
+                        <div class="per p-3 fa-1x">
+                            <!-- <p>Clouds:&nbsp;&nbsp;<span id="desc">desc.......</span></p> -->
+                            <p class="pa">feels_like:<span id="tmpature">hg</span></p>
+                            <p id="loc"> Location<span id="city"></span></p>
+                            <p class="wind">Wind:&nbsp;&nbsp; <span id="wind1">Wind</span> </p>
+                            <!-- <div id="timeEl">66<span id="am-pm"></span></div> -->
+                            <!-- <div id="dateEl">Friday, 10 March</div> -->
+                            <!-- <div id="digital-clock1"></div> -->
+                        </div>
+                        <div class="row  p-3">
+                            <div class="col">
+                                <img src="../Images/cr.png" width="30px" alt="icon">
+                                <p>Safe</p>
+                                <li id="mintemp">0.0-0.9%</li>
+                                <li id="maxtemp">0.9%-11%</li>
+                            </div>
+                            <div class="col">
+                                <h5>0.8%</h5>
+                                <p>Dangerous</p>
+                                <li>12%-40%</li>
+                                <li>55%-80%</li>
+                            </div>
+                        </div>
+                        <br><br><br><br><br><br>
+                        <div class="row">
+                            <!-- <div class="col-md-2 p-3"><br>
+                                <p>12pm</p>
+                                <p>1pm</p>
+                                <p>11am</p>
+                                <p>1am</p>
+                            </div> -->
+                            <div class="col box">
+                                <p class="fa-2x" id="temp11">12&#8451//////
+                                </p>
+                                <canvas id="myChart1" style=" opacity: 3;"></canvas>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">-10</div>
+                            <div class="col">-5</div>
+                            <div class="col">0</div>
+                            <div class="col">+10</div>
+                            <div class="col">+15</div>
+                            <div class="col">+20</div>
+                        </div>
+                        <div class=""><br><br><br><br><br><br>
+                            <h4 class="p-2 m-0" style="font-size: 33px;">Greater Noida</h4>
+                            <p class="p-2" style="font-size: 23px;">
+                                Noida, short for New Okhla Industrial Development Authority, is a city located in
+                                Gautam
+                                Buddha Nagar district of the Indian state of UP.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="heading m-5 fa-2x">
+                            NATIONAL <br> WEATHER
+
+                        </div><br>
+                        <div class="content1 m-5">
+                            <p>Weather Forecast</p>
+                            <p class="fa-3x w-25">Storm&nbsp;<span id="desc">desc.......</span></p>
+                        </div><br>
+                        <div class="weather m-5">
+                            <!-- <p id="loc"> Location<span id="city"></span></p> -->
+
+                            <i class="fa-solid fa-cloud-showers-water fa-2x"></i> <span id="city11">curent
+                                city</span><span id="dateEl">Friday, 10 March</span>
+                            <!-- <div id="timeEl">66<span id="am-pm"></span></div> -->
+                            <!-- <div id="dateEl">Friday, 10 March</div> -->
+                            <!-- <span id="Live">India :&nbsp; </span><span class="clock" id="digital-clock"></span> -->
+                            <br><br>
+                            <p class="para">This is our current weather forecast view</p>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <span id="current-temp" style="font-size: 40px;">17&#8451</span>
+                                </div>
+                                <div class="col-4">
+                                    <p>It's our temperature with clouds</p>
+                                    <p>That's the showing delhi location </p><br>
+                                    <button type="button" class="btn btn-light">SEE DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="col" id="highj">high 20.0&#8451</div>
+                            <div class="col" id="high1">high 30&#8451</div>
+                            <div class="col" id="high2">high 15&#8451</div>
+                            <div class="col" id="high3">high 11&#8451</div>
+                            <div class="col" id="high4"> high -8&#8451</div>
+                            <div class="col" id="high5">high -9&#8451</div>
+                            <div class="row">
+                                <div class="col" id="minj">low 18&#8451</div>
+                                <div class="col" id="low1">low 16&#8451</div>
+                                <div class="col" id="low2">low 13&#8451</div>
+                                <div class="col" id="low3">low 9&#8451</div>
+                                <div class="col" id="low4">low -4&#8451</div>
+                                <div class="col" id="low5"> low -2&#8451</div>
+                            </div>
+                            <canvas id="myChart" style="opacity: 2;"> </canvas>
+                        </div>
+                        <!-- <div class="col" id="temp1">22&#8451</div> <spanc id="city1">cityyy</span> -->
+
+                        <div class="row m-2">
+                            <!-- <div class="col" id="temp1">22&#8451</div> <spanc id="city1">cityyy</span> -->
+                            <!-- <spanc id="city1">cityyy</span> -->
+                            <div class="col fa-2x"><span id="temp1">tmp</span></div>
+                            <div class="col fa-2x"><span id="temp2">tmp</span></div>
+                            <div class="col fa-2x"><span id="temp3">tmp</span></div>
+                            <div class="col fa-2x"><span id="temp4">tmp</span></div>
+                            <div class="col fa-2x"><span id="temp5">tmp</span></div>
+                            <div class="col fa-2x"><span id="temp6">tmp</span></div>
+                            <div class="row end">
+                                <div class="col" id="city1">US</div>
+                                <div class="col" id="city2">Delhi City</div>
+                                <div class="col" id="city3">London</div>
+                                <div class="col" id="city4">San Francisco</div>
+                                <div class="col" id="city5">North Dokhla</div>
+                                <div class="col" id="city6">dubai</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<!-- <script src="../j.js"></script> -->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0-alpha.2/chart.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../Js/index.js"></script>
+
+
+
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</html>
+
+
+<!-- 
+<video autoplay muted loop playsinline over src="../images/production ID_4377451.mp4" id="myVideo">
+</video>  -->

@@ -1,0 +1,259 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  .wrapper .main{
+      margin: 0rem;
+      /* background-color: rgba(114, 93, 93, 0.38); */
+      /* width: 80rem; */
+      
+  }
+  .row .col-md-3{
+      color: white;
+      border-right: 2px solid rgba(187, 180, 180, 0.384);
+      border-radius: 8px;
+  
+  }
+  body{
+      /* background-color: rgba(64, 75, 87, 0.87); */
+  }
+  #navv{
+      background-color: rgba(107, 99, 99, 0.38);
+      
+  }
+  .wrapper{
+      background-image: url(../Images/cloud.jpeg);
+      background-repeat: no-repeat;
+      /* margin: auto; */
+      /* width: 90rem; */
+      border: 2rem;
+      background-size: cover;
+     
+  }
+  /* .per{
+      border: 1px solid white;
+      border-radius: 10px;
+  } */
+  /* .col-4{
+      width: auto;
+  } */
+  /* #myVideo{
+      z-index: -8;
+  } */
+  
+  #city-input{
+      border-radius: 5px;
+      width: 12rem;
+      height: 3vh;
+      font-size: 25px;
+  }
+  .sides{
+      backdrop-filter: blur(17px);
+      display:inline-block;
+      justify-content: space-around;
+  }
+  .container{
+      margin: auto;
+  
+  }
+  .searchbar input{
+      background-color: rgba(167, 105, 34, 0.062);
+      border: none;
+  }
+  #text{
+      font-size: 14px;
+  }
+  .box{
+      /* background-color: aqua; */
+      /* width: 10px; */
+      /* height: 15rem; */
+      border: 3px solid rgba(143, 140, 133, 0.178);
+      border-radius: 7px;
+  }
+  #myChart{
+      color: antiquewhite;
+  }
+  #DT{
+      font-size: 12px;
+  }
+  .para{
+      font-size: 19px;
+  }
+  #text1{
+      font-size: 14px;
+  }
+  .weather .btn{
+      background-color: rgba(204, 149, 98, 0.253);
+      border: none;
+      width: 8rem;
+      border-radius:20px;
+      font-size: 12px;
+      color: white;
+  }
+  .sec-end{
+      font-size: 18px;
+  }
+  .profile{
+      margin-right: 40px;
+  }
+  .setting{
+      background-color: aquaxmarine;
+      margin: auto;
+  }
+  .end{
+      font-size: 18px;
+  }
+  .undline{
+      width: 90px;
+      margin: 10px 0;
+      border: 1px solid wheat;
+  }
+  
+  #timeEl{
+      font-size: 40px;
+  }
+  #am-pm{
+      padding-left: 10px;
+      /* font-size: 25px; */
+  }
+  #dateEl{
+      font-size: 20px
+  }
+  .p1{
+      font-size: 15px;
+  }
+  .undline1{
+      width: 90px;
+      border: 2px solid wheat;
+  }
+  /* graph css...  */
+  .graph{
+      background: none;
+  }
+  
+  
+  /* location css  */
+  #loc{
+      font-size: 20px;
+      
+  }
+  #city1{
+      font-size: 25px;
+      /* font-family: Arial Black; */
+  }
+  #city{
+      font-size: 30px;
+      /* font-family: Arial Black; */
+  }
+  #tmpature{
+      font-size: 30px;
+  }
+  .pa{
+      font-size: 25px;
+  }
+  .wind{
+      font-size: 25px;
+  }
+  input[type="text"]{
+      height: 30px;
+  
+  }
+  .display{
+      text-align: center;
+  }
+  .clock{
+      font-size: 20px;
+      color: rgba(185, 180, 173, 0.877);
+  }
+  
+  /* video  */
+  
+  /* #main video{
+      position: absolute;
+      top: 7rem;
+      left: 48rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
+  
+  .weather-box{
+      margin-left: 35rem;
+      height: 15rem;
+  }
+  #search-input{
+      background-color: rgba(66, 62, 62, 0.212);
+      border: none;
+  }
+  #search-button{
+      background-color: rgb(182, 162, 162);
+      border-radius: 5px;
+      border: none;
+  }
+  
+  
+  /* utc clock  */
+  .utcClock{
+      font-family: Arial;
+      width: 5rem;
+      height: 5rem;
+      border: 3px solid black;
+      border-radius: 50%;
+      background: url(../Images/utc.jpeg) center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .secs{
+      position: relative;
+      /* top: 8%; */
+      left:50%;
+      height: 25px;
+      width: 2px;
+      background-color: tomato;
+      transform: translate(-50%);
+      transform-origin: 25% 0;
+  }
+  .mins{
+      position: relative;
+      top: 30%;
+      left:50%;
+      height: 23px;
+      width: 3px;
+      border-radius: 2px;
+      background-color: rgb(44, 37, 36);
+      transform: translate(-50%);
+      transform-origin: 25% 0;
+      
+  }
+  .hours{
+      position: relative;
+      top: 50%;
+      bottom: 10% ;
+      left:50%;
+      height: 14px;
+      width: 5px;
+      border-radius: 2px;
+      background-color: rgb(201, 32, 32);
+      transform: translate(-50%);
+      transform-origin: 25% 0;
+  }
+  .dots{
+      position:relative;
+      /* top: 30%; */
+      bottom: 38%;
+      left:50%;
+      height: 9px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: black;
+      transform: translate(-50%);
+  }
+  
+  
+  /* location  */
+  
+  #myChart{
+      width: 10px;
+  }
